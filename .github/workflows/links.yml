@@ -1,0 +1,16 @@
+name: Link checer
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+# Declare default permissions as read only.
+permissions: read-all
+
+jobs:
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Link checker
+        uses: gaurav-nelson/github-action-markdown-link-check@1b916f2cf6c36510a6059943104e3c42ce6c16bc # 1.0.16
