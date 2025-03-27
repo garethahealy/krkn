@@ -1,4 +1,4 @@
-name: Link checer
+name: Link checker
 on:
   pull_request:
   push:
@@ -12,5 +12,5 @@ jobs:
   links:
     runs-on: ubuntu-latest
     steps:
-      - name: Link checker
-        uses: gaurav-nelson/github-action-markdown-link-check@1b916f2cf6c36510a6059943104e3c42ce6c16bc # 1.0.16
+      - name: Run linkspector
+        uses: umbrelladocs/action-linkspector@v1
